@@ -1,5 +1,5 @@
 import { useLoaderData } from 'react-router-dom';
-import Donations from './Donations/donations';
+import Donations from './donations/donations';
 import Banner from './header/banner';
 
 const Home = () => {
