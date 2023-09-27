@@ -1,43 +1,41 @@
-import bannerImg from "../../Resources/banner.jpg";
+import bannerImg from '../../assets/banner.jpg';
 
 const Banner = () => {
   const bannerStyle = {
     backgroundImage: `url(${bannerImg})`,
-    backgroundSize: "cover",
-    backgroundPosition: "center",
-    height: "100vh",
-    position: "relative",
+    backgroundSize: 'cover',
+    backgroundPosition: 'center',
+    height: '100vh',
+    position: 'relative',
   };
 
   const overlayStyle = {
-    content: "",
-    position: "absolute",
+    content: '',
+    position: 'absolute',
     top: 0,
     left: 0,
-    width: "100%",
-    height: "100%",
-    backgroundColor: "rgba(255, 255, 255, 0.7)",
+    width: '100%',
+    height: '100%',
+    backgroundColor: 'rgba(255, 255, 255, 0.7)',
   };
 
   return (
     <div
-      className="flex flex-col justify-center items-center text-center relative"
-      style={bannerStyle}
-    >
+      className="flex relative flex-col justify-center items-center text-center"
+      style={bannerStyle}>
       <div
-        className="flex flex-col justify-center items-center text-center relative"
-        style={overlayStyle}
-      >
-        <h2 className="text-4xl font-bold py-5 ">
+        className="flex relative flex-col justify-center items-center text-center"
+        style={overlayStyle}>
+        <h2 className="py-5 text-4xl font-bold">
           I Grow By Helping People In Need
         </h2>
         <div className="flex gap-2">
           <input
             type="text"
             placeholder="Type here"
-            className="input input-bordered input-md w-full max-w-xs"
+            className="w-full max-w-xs input input-bordered input-md"
           />
-          <button className="bg-red-500 px-4 py-1 text-white text-lg font-semibold rounded-md">
+          <button className="px-4 py-1 text-lg font-semibold text-white bg-red-500 rounded-md">
             Search
           </button>
         </div>
